@@ -1,0 +1,19 @@
+{
+  "name": "angular-data-mapping",
+  "description": "Data mapping framework allowing conversion of raw Objects into instances of specified classes",
+  "version": "0.1.8",
+  "dependencies": {
+    "express": ">0.1.9"
+  },
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "mocha": "^2.2.1",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^1.0.2",
+    "karma-ie-launcher": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-phantomjs-launcher": "~0.1",
+    "karma-cli": "0.0.4"
+  }
+}
