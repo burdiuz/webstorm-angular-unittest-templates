@@ -8,7 +8,7 @@
   var DIRECTIVE_HTML_NAME = '${Directive_HTML_name}';
   var DIRECTIVE_NAME = _getDirectiveName();
 
-  describe(('${Test_category}' || MODULE_NAME), function() {
+  describe(MODULE_NAME, function() {
     var ${DS}q = null;
     var ${DS}rootScope = null;
     var ${DS}compile = null;
@@ -25,7 +25,7 @@
      */
     beforeEach(angular.mock.module(MODULE_NAME));
 
-    describe(('${Test_description}' || DIRECTIVE_HTML_NAME), function() {
+    describe(DIRECTIVE_HTML_NAME, function() {
 
       // Unit Tests for "${Directive_HTML_name}" Directive, "${Module_name}" module
 
@@ -38,15 +38,15 @@
       /**
        * Create environment and new directive instance
        */
-      beforeEach(function() {
+      beforeEach(inject(function() {
         ${DS}parentScope = ${DS}rootScope.${DS}new(true);
         element = angular.element('<' + DIRECTIVE_HTML_NAME + '></' + DIRECTIVE_HTML_NAME + '>');
         ${DS}compile(element)(${DS}parentScope);
-        ${DS}httpBackend.flush();
-        ${DS}parentScope.${DS}digest();
+        ${DS}httpBackend.flush(); // for external template
+        //${DS}parentScope.${DS}digest(); // for embedded template
         controller = element.controller(DIRECTIVE_NAME);
         ${DS}scope = element.isolateScope();
-      });
+      }));
 
       /**
        * Clear test, remove created scope and other objects
@@ -75,7 +75,7 @@
   });
 
   function _getDirectiveName() {
-    var list = DIRECTIVE_NAME.split('-');
+    var list = DIRECTIVE_HTML_NAME.split('-');
     var name = list.shift();
     while (list.length) {
       var item = list.shift();

@@ -27,8 +27,9 @@
     /**
      * Template wrapper for registering mocked services
      */
-    beforeEach(angular.mock.module(MODULE_NAME, function(${DS}provide) {
+    beforeEach(angular.mock.module(MODULE_NAME, function(${DS}provide, ${DS}compileProvider) {
       ${DS}provide.service('MockedService', MockedService);
+	  mockDirective($compileProvider, 'MockedDirective');
     }));
 
     describe(('${Test_description}' || DIRECTIVE_HTML_NAME), function() {
@@ -121,8 +122,24 @@
     ]));
   });
 
+  /**
+   * Wrapper for $compileProvider.directive(), that allows to mock directives preventing their execution while unit-tests
+   */
+  function mockDirective($compileProvider, name, link, controller){
+    $compileProvider.directive(name, function(){
+      return {
+        priority: 4092,
+        name: name,
+        terminal: true,
+        restrict:'AE',
+        link: link,
+        controller: controller
+      };
+    });
+  }
+
   function _getDirectiveName() {
-    var list = DIRECTIVE_NAME.split('-');
+    var list = DIRECTIVE_HTML_NAME.split('-');
     var name = list.shift();
     while (list.length) {
       var item = list.shift();
