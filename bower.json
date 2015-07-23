@@ -1,8 +1,8 @@
 {
-  "name": "angular-data-mapping",
-  "version": "0.1.8",
+  "name": "webstorm-angular-unittest-templates",
+  "version": "0.0.1",
   "main": [
-    "dist/datamapping.js"
+    "1.3/*.template.js"
   ],
   "moduleType": [
     "globals"
@@ -10,32 +10,33 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-	"src",
-    "examples",
-    "tests",
     "node_modules",
     "bower_components",
-	"application.js",
-	"gulpfile.js",
 	"index.html",
 	"karma.conf.js",
 	"package.json"
   ],
   "keywords": [
     "angular",
-    "angularjs",
-    "data",
-    "mapping",
-    "data-mapping",
-    "entity",
-    "entities"
+    "AngularJS",
+    "WebStorm",
+    "IntelliJ",
+    "IDEA",
+    "unit",
+    "test",
+    "unittest",
+    "mocha",
+    "jasmine",
+    "karma",
+    "file",
+    "template"
   ],
   "dependencies": {
-    "jquery": ">=1.9",
-    "bootstrap": ">=3",
-    "angular": ">=1.2.0"
   },
   "devDependencies": {
+    "jquery": ">=1.9",
+    "bootstrap": ">=3",
+    "angular": ">=1.2.0",
     "angular-mocks": "~1.3.14"
   }
 }
