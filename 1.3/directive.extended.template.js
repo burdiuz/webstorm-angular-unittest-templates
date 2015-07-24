@@ -24,12 +24,16 @@
 
     }
 
+    function MockedDirectiveController() {
+
+    }
+
     /**
      * Template wrapper for registering mocked services
      */
     beforeEach(angular.mock.module(MODULE_NAME, function(${DS}provide, ${DS}compileProvider) {
       ${DS}provide.service('MockedService', MockedService);
-	  mockDirective($compileProvider, 'MockedDirective');
+	    mockDirective(${DS}compileProvider, 'MockedDirective', MockedDirectiveController);
     }));
 
     describe(('${Test_description}' || DIRECTIVE_HTML_NAME), function() {
@@ -123,10 +127,10 @@
   });
 
   /**
-   * Wrapper for $compileProvider.directive(), that allows to mock directives preventing their execution while unit-tests
+   * Wrapper for ${DS}compileProvider.directive(), that allows to mock directives preventing their execution while unit-tests
    */
-  function mockDirective($compileProvider, name, link, controller){
-    $compileProvider.directive(name, function(){
+  function mockDirective(${DS}compileProvider, name, controller, link){
+    ${DS}compileProvider.directive(name, function(){
       return {
         priority: 4092,
         name: name,

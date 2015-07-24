@@ -4,7 +4,22 @@
 (function() {
   'use strict';
 
-  function TestController() {
+  function TestController(testHttpService) {
+    var _this = this;
+    _this.label = '';
+    _this.text = '';
+    _this.readyTime = '';
+    _this.clickTime = '';
+    _this.readyHandler = function(time){
+      _this.readyTime = time;
+    };
+    _this.clickHandler = function(time){
+      _this.clickTime = time;
+    };
+    testHttpService.load().then(function(data){
+      _this.label = data.label;
+      _this.text = data.text;
+    });
 
   }
 

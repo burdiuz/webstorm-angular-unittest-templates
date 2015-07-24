@@ -1,4 +1,6 @@
-<p>
-  {{ctrl.text}}
-</p>
-<button ng-click="ctrl.onClick()">Click Me!</button>
+<div style="width: 250px; outline: 1px solid #FF0000; padding: 5px; margin: 5px;">
+  <p>
+    {{ctrl.text}}
+  </p>
+  <button data-ng-click="ctrl.click()" data-ng-show="ctrl.buttonEnabled">Click Me!</button>
+</div>
