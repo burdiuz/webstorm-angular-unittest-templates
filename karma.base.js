@@ -20,7 +20,8 @@ module.exports = {
     {pattern: 'bower_components/bootstrap/dist/js/bootstrap.js', watched: false},
     {pattern: 'bower_components/angular/angular.js', watched: false},
     {pattern: 'bower_components/angular-mocks/angular-mocks.js', watched: false},
-    'tests/*.js'
+    'tests/1.3/src/*.module.js',
+    'tests/1.3/src/*.js'
   ],
 
 

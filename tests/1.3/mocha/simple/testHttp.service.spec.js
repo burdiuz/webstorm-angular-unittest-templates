@@ -1,5 +1,5 @@
 /**
- * Created by Oleg Galaburda on 24.07.15.
+ * Created by iFrame on 30.07.15.
  */
 (function() {
   'use strict';
@@ -17,8 +17,32 @@
     describe('testHttpService', function() {
       // Unit Tests for "testHttpService" Service, "aw.test" module
 
-      it('Test', function() {
+      describe('When load() succeeded', function() {
+        var expectedResult = null;
+        beforeEach(function(){
+          expectedResult = {value: 'All hail Megathron'};
+          $httpBackend.expectGET(/data\.json$/).respond(200, expectedResult);
+        });
+        it('should return data', function(done){
+          service.load().then(function(data){
+            expect(data).to.be.ok;
+            expect(data).to.be.eql(expectedResult);
+            done();
+          });
+          $httpBackend.flush();
+        });
+      });
 
+      describe('When load() failed', function() {
+        beforeEach(function(){
+          $httpBackend.expectGET(/data\.json$/).respond(404);
+        });
+        it('should reject promise on fail', function(done){
+          service.load().catch(function(){
+            done();
+          });
+          $httpBackend.flush();
+        });
       });
 
       //End

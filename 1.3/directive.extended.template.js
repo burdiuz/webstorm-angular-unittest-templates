@@ -32,8 +32,8 @@
      * Template wrapper for registering mocked services
      */
     beforeEach(angular.mock.module(MODULE_NAME, function(${DS}provide, ${DS}compileProvider) {
-      ${DS}provide.service('MockedService', MockedService);
-	    mockDirective(${DS}compileProvider, 'MockedDirective', MockedDirectiveController);
+      ${DS}provide.service('mockedService', MockedService);
+	    mockDirective(${DS}compileProvider, 'mockedDirective', MockedDirectiveController);
     }));
 
     describe(('${Test_description}' || DIRECTIVE_HTML_NAME), function() {
@@ -53,10 +53,16 @@
       });
 
       //End
-
-
+      /**
+       * Mock directive template and pre-configure
+       */
+      beforeEach(inject(function() {
+        ${DS}httpBackend.whenGET(new RegExp(DIRECTIVE_NAME+'\\.directive\\.html${DS}')).respond(200, '<div/>');
+      }));
+      /**
+       * Create and initialize Directive
+       */
       beforeEach(createEnvironment);
-      // Additional beforeEach/afterEach statements for "RUN" phase add here
       /**
        * Template beforeEach wrapper for custom services and configuration
        */

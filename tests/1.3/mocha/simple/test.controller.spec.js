@@ -1,5 +1,5 @@
 /**
- * Created by Oleg Galaburda on 24.07.15.
+ * Created by iFrame on 30.07.15.
  */
 (function() {
   'use strict';

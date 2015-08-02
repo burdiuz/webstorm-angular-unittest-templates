@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json webstorm-angular-unittest-templates@0.0.1 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'd:\\Server\\home\\localhost\\www\\my\\webstorm-angular-unittest-templates',
+7 verbose install   [ 'karma',
+7 verbose install     'karma-mocha',
+7 verbose install     'karma-sinon-chai',
+7 verbose install     'jasmine-core',
+7 verbose install     'karma-jasmine',
+7 verbose install     'karma-ie-launcher',
+7 verbose install     'karma-chrome-launcher',
+7 verbose install     'karma-firefox-launcher',
+7 verbose install     'karma-phantomjs-launcher',
+7 verbose install     'express',
+7 verbose install     'karma-cli' ] ]
+8 info preinstall webstorm-angular-unittest-templates@0.0.1
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping karma@^0.12 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+11 verbose already installed skipping karma-mocha@^0.2 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+12 verbose already installed skipping karma-sinon-chai@^1.0 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+13 verbose already installed skipping jasmine-core@^2.3 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+14 verbose already installed skipping karma-jasmine@^0.3 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+15 verbose already installed skipping karma-ie-launcher@^0.2 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+16 verbose already installed skipping karma-chrome-launcher@^0.2 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+17 verbose already installed skipping karma-firefox-launcher@^0.1 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+18 verbose already installed skipping karma-phantomjs-launcher@^0.2 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+19 verbose already installed skipping express@^4.10 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+20 verbose already installed skipping karma-cli@^0.1 d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+21 silly resolved []
+22 info build d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+23 verbose linkStuff [ false, false, false, 'd:\\Server\\home\\localhost\\www\\my' ]
+24 info linkStuff webstorm-angular-unittest-templates@0.0.1
+25 verbose linkBins webstorm-angular-unittest-templates@0.0.1
+26 verbose linkMans webstorm-angular-unittest-templates@0.0.1
+27 verbose rebuildBundles webstorm-angular-unittest-templates@0.0.1
+28 verbose rebuildBundles [ '.bin',
+28 verbose rebuildBundles   'express',
+28 verbose rebuildBundles   'jasmine-core',
+28 verbose rebuildBundles   'karma',
+28 verbose rebuildBundles   'karma-chrome-launcher',
+28 verbose rebuildBundles   'karma-cli',
+28 verbose rebuildBundles   'karma-firefox-launcher',
+28 verbose rebuildBundles   'karma-ie-launcher',
+28 verbose rebuildBundles   'karma-jasmine',
+28 verbose rebuildBundles   'karma-mocha',
+28 verbose rebuildBundles   'karma-phantomjs-launcher',
+28 verbose rebuildBundles   'karma-sinon-chai',
+28 verbose rebuildBundles   'phantomjs' ]
+29 verbose rebuild bundle d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates\node_modules\phantomjs
+30 info build d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates\node_modules\phantomjs
+31 info preinstall phantomjs@1.9.17
+32 verbose linkStuff [ false,
+32 verbose linkStuff   false,
+32 verbose linkStuff   false,
+32 verbose linkStuff   'd:\\Server\\home\\localhost\\www\\my\\webstorm-angular-unittest-templates\\node_modules' ]
+33 info linkStuff phantomjs@1.9.17
+34 verbose linkBins phantomjs@1.9.17
+35 verbose link bins [ { phantomjs: './bin/phantomjs' },
+35 verbose link bins   'd:\\Server\\home\\localhost\\www\\my\\webstorm-angular-unittest-templates\\node_modules\\.bin',
+35 verbose link bins   false ]
+36 verbose linkMans phantomjs@1.9.17
+37 verbose rebuildBundles phantomjs@1.9.17
+38 verbose rebuildBundles [ '.bin',
+38 verbose rebuildBundles   'adm-zip',
+38 verbose rebuildBundles   'fs-extra',
+38 verbose rebuildBundles   'kew',
+38 verbose rebuildBundles   'npmconf',
+38 verbose rebuildBundles   'progress',
+38 verbose rebuildBundles   'request',
+38 verbose rebuildBundles   'request-progress',
+38 verbose rebuildBundles   'which' ]
+39 info install phantomjs@1.9.17
+40 verbose unsafe-perm in lifecycle true
+41 info phantomjs@1.9.17 Failed to exec install script
+42 error phantomjs@1.9.17 install: `node install.js`
+42 error Exit status 1
+43 error Failed at the phantomjs@1.9.17 install script.
+43 error This is most likely a problem with the phantomjs package,
+43 error not with npm itself.
+43 error Tell the author that this fails on your system:
+43 error     node install.js
+43 error You can get their info via:
+43 error     npm owner ls phantomjs
+43 error There is likely additional logging output above.
+44 error System Windows_NT 6.2.9200
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+46 error cwd d:\Server\home\localhost\www\my\webstorm-angular-unittest-templates
+47 error node -v v0.10.36
+48 error npm -v 1.4.28
+49 error code ELIFECYCLE
+50 verbose exit [ 1, true ]

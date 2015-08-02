@@ -1,5 +1,5 @@
 /**
- * Created by Oleg Galaburda on 24.07.15.
+ * Created by iFrame on 30.07.15.
  */
 (function() {
   'use strict';
@@ -26,7 +26,7 @@
      * Template wrapper for registering mocked services
      */
     beforeEach(angular.mock.module(MODULE_NAME, function($provide) {
-      $provide.service('MockedService', MockedService);
+      $provide.service('mockedService', MockedService);
     }));
 
     describe(('aw.test::TestController' || 'TestController'), function() {

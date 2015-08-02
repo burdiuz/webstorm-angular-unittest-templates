@@ -1,5 +1,5 @@
 /**
- * Created by Oleg Galaburda on 24.07.15.
+ * Created by iFrame on 30.07.15.
  */
 (function() {
   'use strict';
@@ -12,31 +12,28 @@
     var $timeout = null;
     var $httpBackend = null;
     /**
-     * @type {testHttpService}
+     * @type {testTimeService}
      */
     var service = null;
-
-    function MockedService() {
-
-    }
 
     /**
      * Template wrapper for registering mocked services
      */
-    beforeEach(angular.mock.module(MODULE_NAME, function($provide) {
-      $provide.service('MockedService', MockedService);
-    }));
+    beforeEach(angular.mock.module(MODULE_NAME));
 
-    describe(('aw.test::TestHttpService' || 'testHttpService'), function() {
+    describe(('aw.test::testTimeService' || 'testTimeService'), function() {
 
-      it('#self-test', function() {
-        expect(service).to.be.ok;
-      });
+      // Unit Tests for "testTimeService" Service, "aw.test" module
 
-      // Unit Tests for "testHttpService" Service, "aw.test" module
-
-      it('Test', function() {
-
+      describe('When call getTime()', function(){
+        it('should return String', function() {
+          expect(service.getTime()).to.be.a('string');
+        });
+        it('should return unix time stamp', function() {
+          var value = service.getTime();
+          expect(value).to.have.length(13);
+          expect(value).to.match(/^\d+$/);
+        });
       });
 
       //End
@@ -45,9 +42,9 @@
        * Create service
        */
       beforeEach(inject([
-        'testHttpService',
-        function(testHttpService) {
-          service = testHttpService;
+        'testTimeService',
+        function(testTimeService) {
+          service = testTimeService;
         }
       ]));
 

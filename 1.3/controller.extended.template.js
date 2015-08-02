@@ -26,7 +26,7 @@
      * Template wrapper for registering mocked services
      */
     beforeEach(angular.mock.module(MODULE_NAME, function(${DS}provide) {
-      ${DS}provide.service('MockedService', MockedService);
+      ${DS}provide.service('mockedService', MockedService);
     }));
 
     describe(('${Test_description}' || '${Controller_name}'), function(){

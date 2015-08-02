@@ -1,5 +1,5 @@
 /**
- * Created by Oleg Galaburda on 24.07.15.
+ * Created by iFrame on 30.07.15.
  */
 (function() {
   'use strict';
@@ -17,8 +17,15 @@
     describe('testTimeService', function() {
       // Unit Tests for "testTimeService" Service, "aw.test" module
 
-      it('Test', function() {
-
+      describe('When call getTime()', function(){
+        it('should return String', function() {
+          expect(service.getTime()).to.be.a('string');
+        });
+        it('should return unix time stamp', function() {
+          var value = service.getTime();
+          expect(value).to.have.length(13);
+          expect(value).to.match(/^\d+$/);
+        });
       });
 
       //End
