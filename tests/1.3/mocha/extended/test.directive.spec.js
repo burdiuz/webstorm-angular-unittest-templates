@@ -56,6 +56,15 @@
         it('buttonEnabled should be FALSE', function() {
           expect(controller.buttonEnabled).to.be.false;
         });
+        describe('When text passed', function() {
+          beforeEach(function() {
+            $parentScope.text = 'Text';
+            $parentScope.$digest();
+          });
+          it('buttonEnabled should be TRUE', function() {
+            expect(controller.buttonEnabled).to.be.true;
+          });
+        });
       });
 
       describe('When text passed', function() {

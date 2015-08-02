@@ -29,8 +29,13 @@
 
       // Unit Tests for "${Directive_HTML_name}" Directive, "${Module_name}" module
 
-      it('Test', function() {
+      describe('When ', function() {
+        beforeEach(function() {
 
+        });
+        it('should ', function() {
+
+        });
       });
 
       //End

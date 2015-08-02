@@ -18,8 +18,13 @@
     describe(CONTROLLER_NAME, function() {
       // Unit Tests for "${Controller_name}" Controller, "${Module_name}" module
 
-      it('Test', function() {
+      describe('When ', function() {
+        beforeEach(function() {
 
+        });
+        it('should ', function() {
+
+        });
       });
 
       //End
