@@ -1,5 +1,5 @@
 /**
- * Created by Oleg Galaburda on 30.07.15.
+ * Created by Oleg Galaburda on 03.08.15.
  */
 (function() {
   'use strict';
@@ -45,6 +45,7 @@
             label: labelValue,
             text: textValue
           };
+          httpService.load.reset();
           $rootScope.$digest();
         });
         beforeEach(createEnvironment);
@@ -83,6 +84,16 @@
 
       //End
 
+      beforeEach(createEnvironment);
+      /**
+       * Additional beforeEach wrapper for custom services and configuration
+       */
+      beforeEach(inject([
+        'testHttpService',
+        function(testHttpService) {
+          httpService = testHttpService;
+        }
+      ]));
       afterEach(destroyEnvironment);
     });
 
@@ -94,13 +105,11 @@
       '$rootScope',
       '$controller',
       '$timeout',
-      'testHttpService',
-      function(_$q_, _$rootScope_, _$controller_, _$timeout_, testHttpService) {
+      function(_$q_, _$rootScope_, _$controller_, _$timeout_) {
         $q = _$q_;
         $rootScope = _$rootScope_;
         $controller = _$controller_;
         $timeout = _$timeout_;
-        httpService = testHttpService;
       }
     ]));
 
