@@ -49,6 +49,14 @@
       //End
 
       beforeEach(createEnvironment);
+      /**
+       * Additional beforeEach wrapper for custom services and configuration
+       */
+      beforeEach(inject([
+        function() {
+
+        }
+      ]));
       afterEach(destroyEnvironment);
     });
 
@@ -61,11 +69,11 @@
       '${DS}controller',
       '${DS}timeout',
       function(_${DS}q_, _${DS}rootScope_, _${DS}controller_, _${DS}timeout_) {
-        ${DS}q = _${DS}q_;
-        ${DS}rootScope = _${DS}rootScope_;
-        ${DS}controller = _${DS}controller_;
-        ${DS}timeout = _${DS}timeout_;
-     }
+      ${DS}q = _${DS}q_;
+      ${DS}rootScope = _${DS}rootScope_;
+      ${DS}controller = _${DS}controller_;
+      ${DS}timeout = _${DS}timeout_;
+    }
     ]));
 
     /**

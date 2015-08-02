@@ -61,19 +61,23 @@
       /**
        * Mock directive template and pre-configure
        */
-      beforeEach(inject(function() {
-        ${DS}httpBackend.whenGET(new RegExp(DIRECTIVE_NAME+'\\.directive\\.html${DS}')).respond(200, '<div/>');
-      }));
+      beforeEach(inject([
+        function() {
+          ${DS}httpBackend.whenGET(new RegExp(DIRECTIVE_NAME+'\\.directive\\.html${DS}')).respond(200, '<div/>');
+        }
+      ]));
       /**
        * Create and initialize Directive
        */
       beforeEach(createEnvironment);
       /**
-       * Template beforeEach wrapper for custom services and configuration
+       * Additional beforeEach wrapper for custom services and configuration
        */
-      beforeEach(inject(function() {
+      beforeEach(inject([
+        function() {
 
-      }));
+        }
+      ]));
       afterEach(destroyEnvironment);
     });
 
