@@ -22,9 +22,7 @@
           expect(service.getTime()).to.be.a('string');
         });
         it('should return unix time stamp', function() {
-          var value = service.getTime();
-          expect(value).to.have.length(13);
-          expect(value).to.match(/^\d+$/);
+          expect(service.getTime()).to.match(/^\d{13}$/);
         });
       });
 
