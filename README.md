@@ -4,7 +4,7 @@ WebStorm file templates for unit-testing of applications based on [AngularJS](ht
  - Extended -- full list of mocks/tools I use often in testing, after creating new test, there probably will be something to remove or delete.
  - Simple -- lightweight template with thing that needed most in testing, usually nothing removed and lots added.
 
-Everything you need is in `/1.3/` folder, I'm using these templates for application that was built with AngularJS 1.3, but this does not mean you cannot use it with any version of AngularJS. Some tweeking might be required, also #self-tests might come handy.
+Everything you need is in `/1.3/` folder, I'm using these templates for application that was built with AngularJS 1.3, but this does not mean you cannot use it with any version of AngularJS. Some tweeking might be required, also [#self-tests](#self-tests)  might come handy.
 
 > **Note:** Templates do not contain framework-specific code(there are no assertions defined), so should work fine with most test frameworks. Currently [Jasmine](http://jasmine.github.io/) and [Mocha](http://mochajs.org/) tested.
 
