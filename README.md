@@ -32,18 +32,21 @@ When creating new file from template WebStorm will ask you for file name and add
 ![Use Controller Extended Unit-tests template](images/controller_extended.png)
 >#### Controller
  - Module name -- angular module of controller
- - Controller name -- controller name in angular
+ - Controller name -- controller name in angular  
+
 >#### Directive
  - Module name -- angular module of controller
- - Directive HTML name - directive HTML name, the one with dashes
+ - Directive HTML name - directive HTML name, the one with dashes  
+
 >#### Service
  - Module name -- angular module of controller
  - Service name -- service name registered in angular
  
 Extended template for controller, directive and service supports optional parameters  
 
- - Test category -- 1st nesting level for test cases, if not specified, angular module will be used as test category
- - Test description -- 2nd nesting level for test cases, if not specified, specified name of controller/directive/service will be used as test description
+> - Test category -- 1st nesting level for test cases, if not specified, angular module will be used as test category
+> - Test description -- 2nd nesting level for test cases, if not specified, specified name of controller/directive/service will be used as test description   
+
 ![Categories and Descriptions in WebStorm](images/test_categories.png)
  
 ## #self-tests
@@ -94,6 +97,6 @@ This is simple test cases to test created environment, they may be used to know 
       it('#self-test', function() {
         expect(service).to.be.ok;
       });
- ```
+ ```  
 
 > Written with [StackEdit](https://stackedit.io/).
