@@ -12,8 +12,13 @@
     "**/.*",
     "node_modules",
     "bower_components",
-	"index.html",
-	"karma.conf.js",
+	"images",
+	"tests",
+	"pack.info",
+	"karma.base.js",
+	"karma.mocha.js",
+    "karma.jasmine.js",
+    "server.js",
 	"package.json"
   ],
   "keywords": [
