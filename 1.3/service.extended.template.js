@@ -29,10 +29,6 @@
 
     describe(('${Test_description}' || '${Service_name}'), function() {
 
-      it('#self-test', function() {
-        expect(service).to.be.ok;
-      });
-
       // Unit Tests for "${Service_name}" Service, "${Module_name}" module
 
       describe('When ', function() {

@@ -30,11 +30,6 @@
 
     describe(('${Test_description}' || '${Controller_name}'), function(){
 
-      it('#self-test', function() {
-        expect(${DS}scope).to.be.ok;
-        expect(controller).to.be.ok;
-      });
-
       // Unit Tests for "${Controller_name}" Controller, "${Module_name}" module
 
       describe('When ', function() {

@@ -38,14 +38,6 @@
 
     describe(('${Test_description}' || DIRECTIVE_HTML_NAME), function() {
 
-      it('#self-test', function() {
-        expect(${DS}parentScope).to.be.ok;
-        expect(element).to.be.ok;
-        expect(controller).to.be.ok;
-        expect(${DS}scope).to.be.ok;
-        expect(${DS}scope.${DS}parent).to.be.equal(${DS}parentScope);
-      });
-
       // Unit Tests for "${Directive_HTML_name}" Directive, "${Module_name}" module
 
       describe('When ', function() {
