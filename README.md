@@ -6,8 +6,10 @@ WebStorm file templates for unit-testing of applications based on [AngularJS](ht
 
 Everything you need is in `/1.3/` folder, I'm using these templates for application that was built with AngularJS 1.3, but this does not mean you cannot use it with any version of AngularJS. Some tweeking might be required, also #self-tests might come handy.
 
+> **Note:** Templates do not contain framework-specific code(there are no assertions defined), so should work fine with any test framework.
+
 ## Contents
-This repo includes WebStorm templates in `1.3/` folder for [AngularJS](https://angularjs.org/) 1.3 unit-testing and test project, that was covered with unit-tests using these templates. Currently in use two Karma configs for using [Mocha](http://mochajs.org/) + [Chai](http://chaijs.com/) + [Sinon.JS](http://sinonjs.org/) and [Jasmine](http://jasmine.github.io/) testing frameworks.
+This repo includes WebStorm templates in `1.3/` folder for [AngularJS](https://angularjs.org/) 1.3 unit-testing and test project, that was covered with unit-tests using these templates. Currently in use two Karma configs for [Mocha](http://mochajs.org/) + [Chai](http://chaijs.com/) + [Sinon.JS](http://sinonjs.org/) and [Jasmine](http://jasmine.github.io/) testing frameworks.
 `tests/1.3` folder contains  
 
  - `/src` -- test project that should be covered with unit-tests
