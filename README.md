@@ -1,10 +1,10 @@
 # webstorm-angular-unittest-templates
 WebStorm file templates for unit-testing of applications based on [AngularJS](https://angularjs.org/). This set of templates for controllers, directives and services is designed to minimize time needed to expand environment when new test cases should be created. There are two types of templates
 
- - Extended -- full list of mocks/tools I use often in testing, after creating new test, there probably will be something to remove or delete.
- - Simple -- lightweight template with thing that needed most in testing, usually nothing removed and lots added.
+ - Extended -- full list of mocks/tools I use often in testing, after creating new test, there probably will be something to remove.
+ - Simple -- lightweight template with things that needed most in testing, usually nothing removed and lots added.
 
-Everything you need is in `/1.3/` folder, I'm using these templates for application that was built with AngularJS 1.3, but this does not mean you cannot use it with any version of AngularJS. Some tweeking might be required, also [#self-tests](#self-tests)  might come handy.
+Everything you need is in `/bin/` folder, or `/1.3/` if you want to check templates code. I'm using these templates for application that was built with AngularJS 1.3, but this does not mean you cannot use it with any version of AngularJS. Some tweeking might be required, also [#self-tests](#self-tests)  might come handy.
 
 > **Note:** Templates do not contain framework-specific code(there are no assertions defined), so should work fine with most test frameworks. Currently [Jasmine](http://jasmine.github.io/) and [Mocha](http://mochajs.org/) tested.
 
@@ -19,6 +19,14 @@ This repo includes WebStorm templates in `1.3/` folder for [AngularJS](https://a
  - `jasmine` -- Unit-tests written using Jasmine framework, has same folders inside, as `/mocha/*`.
 
 ## Install
+I add templates to your WebStorm, [do these steps](https://www.jetbrains.com/webstorm/help/exporting-and-importing-settings.html):
+1. Download [JAR archive with templates](https://raw.githubusercontent.com/burdiuz/webstorm-angular-unittest-templates/master/bin/unittest_templates_angular13.jar)
+2. Open WebStorm
+3. File > Import Settings
+4. In the "Import File Location" dialog box that opens, select downloaded archive
+5. In the "Select Components to Import" dialog box that opens, specify "File Templates" to be imported, and click OK
+
+Alternatively you can add templates by hand using "File and Code Templates" settings panel.
 1. Open WebStorm
 2. File > Settings... (Ctrl+Alt+S) > Editor > File and Code Templates
 3. Select "Templates" tab
