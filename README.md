@@ -109,4 +109,8 @@ This is simple test cases to test created environment, they may be used to know 
       });
  ```  
 
+## Links
+[AngularJS WebStorm live templates](https://github.com/angularjs-livetpls/angularjs-webstorm-livetpls)
+[An Introduction To Unit Testing In AngularJS Applications](http://www.smashingmagazine.com/2014/10/introduction-to-unit-testing-in-angularjs/)
+
 > Written with [StackEdit](https://stackedit.io/).
