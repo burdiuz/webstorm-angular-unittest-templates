@@ -40,6 +40,7 @@ Alternatively you can add templates by hand using "File and Code Templates" sett
 7. Apply
 
 > **Note:** After adding templates you can create new files from templates via File > New... (Alt+Insert) menu or context "New" menu of Project panel.
+![Templates in New File context menu](images/webstorm_new_file.png)
 
 ## Parameters
 When creating new file from template WebStorm will ask you for file name and additional information:
