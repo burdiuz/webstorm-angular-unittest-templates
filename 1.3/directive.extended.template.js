@@ -33,7 +33,7 @@
      */
     beforeEach(angular.mock.module(MODULE_NAME, function(${DS}provide, ${DS}compileProvider) {
       ${DS}provide.service('mockedService', MockedService);
-	    mockDirective(${DS}compileProvider, 'mockedDirective', MockedDirectiveController);
+	  mockDirective(${DS}compileProvider, 'mockedDirective', MockedDirectiveController);
     }));
 
     describe(('${Test_description}' || DIRECTIVE_HTML_NAME), function() {
